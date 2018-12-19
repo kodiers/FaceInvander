@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AC77201221C9DB4A005F3193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77201121C9DB4A005F3193 /* AppDelegate.swift */; };
-		AC77201421C9DB4A005F3193 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = AC77201321C9DB4A005F3193 /* art.scnassets */; };
 		AC77201621C9DB4A005F3193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77201521C9DB4A005F3193 /* ViewController.swift */; };
 		AC77201921C9DB4A005F3193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC77201721C9DB4A005F3193 /* Main.storyboard */; };
 		AC77201B21C9DB4B005F3193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC77201A21C9DB4B005F3193 /* Assets.xcassets */; };
 		AC77201E21C9DB4B005F3193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC77201C21C9DB4B005F3193 /* LaunchScreen.storyboard */; };
+		AC77202621C9DCF5005F3193 /* Eye.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77202521C9DCF5005F3193 /* Eye.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC77200E21C9DB4A005F3193 /* FaceInvander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceInvander.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC77201121C9DB4A005F3193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC77201321C9DB4A005F3193 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		AC77201521C9DB4A005F3193 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC77201821C9DB4A005F3193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC77201A21C9DB4B005F3193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC77201D21C9DB4B005F3193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC77201F21C9DB4B005F3193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC77202521C9DCF5005F3193 /* Eye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eye.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				AC77201121C9DB4A005F3193 /* AppDelegate.swift */,
-				AC77201321C9DB4A005F3193 /* art.scnassets */,
 				AC77201521C9DB4A005F3193 /* ViewController.swift */,
 				AC77201721C9DB4A005F3193 /* Main.storyboard */,
 				AC77201A21C9DB4B005F3193 /* Assets.xcassets */,
 				AC77201C21C9DB4B005F3193 /* LaunchScreen.storyboard */,
 				AC77201F21C9DB4B005F3193 /* Info.plist */,
+				AC77202521C9DCF5005F3193 /* Eye.swift */,
 			);
 			path = FaceInvander;
 			sourceTree = "<group>";
@@ -125,7 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC77201421C9DB4A005F3193 /* art.scnassets in Resources */,
 				AC77201E21C9DB4B005F3193 /* LaunchScreen.storyboard in Resources */,
 				AC77201B21C9DB4B005F3193 /* Assets.xcassets in Resources */,
 				AC77201921C9DB4A005F3193 /* Main.storyboard in Resources */,
@@ -141,6 +140,7 @@
 			files = (
 				AC77201621C9DB4A005F3193 /* ViewController.swift in Sources */,
 				AC77201221C9DB4A005F3193 /* AppDelegate.swift in Sources */,
+				AC77202621C9DCF5005F3193 /* Eye.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
