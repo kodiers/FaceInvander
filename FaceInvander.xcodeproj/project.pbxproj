@@ -13,6 +13,7 @@
 		AC77201B21C9DB4B005F3193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC77201A21C9DB4B005F3193 /* Assets.xcassets */; };
 		AC77201E21C9DB4B005F3193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC77201C21C9DB4B005F3193 /* LaunchScreen.storyboard */; };
 		AC77202621C9DCF5005F3193 /* Eye.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77202521C9DCF5005F3193 /* Eye.swift */; };
+		AC7A6C2121CB31A6006CC7BF /* shot.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC7A6C2021CB31A6006CC7BF /* shot.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AC77201D21C9DB4B005F3193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC77201F21C9DB4B005F3193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC77202521C9DCF5005F3193 /* Eye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eye.swift; sourceTree = "<group>"; };
+		AC7A6C2021CB31A6006CC7BF /* shot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shot.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				AC77201C21C9DB4B005F3193 /* LaunchScreen.storyboard */,
 				AC77201F21C9DB4B005F3193 /* Info.plist */,
 				AC77202521C9DCF5005F3193 /* Eye.swift */,
+				AC7A6C2021CB31A6006CC7BF /* shot.wav */,
 			);
 			path = FaceInvander;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			files = (
 				AC77201E21C9DB4B005F3193 /* LaunchScreen.storyboard in Resources */,
 				AC77201B21C9DB4B005F3193 /* Assets.xcassets in Resources */,
+				AC7A6C2121CB31A6006CC7BF /* shot.wav in Resources */,
 				AC77201921C9DB4A005F3193 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
