@@ -24,6 +24,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     var targets = [UIImageView]()
     var currentTarget = 0
     var gunshot: AVAudioPlayer?
+    var startTime = CACurrentMediaTime()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -146,6 +147,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     }
     
     @objc func createTarget() {
+        guard currentTarget < targets.count else {
+            endGame()
+            return
+        }
         // pick target
         let target = targets[currentTarget]
         // scale it
@@ -184,6 +189,20 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         }
         // create another target
         perform(#selector(createTarget), with: nil, afterDelay: 1)
+    }
+    
+    func endGame() {
+        let timeTaken = Int(CACurrentMediaTime() - startTime)
+        let ac = UIAlertController(title: "Game over!", message: "You took \(timeTaken) seconds.", preferredStyle: .alert)
+        present(ac, animated: true, completion: nil)
+        // automatically finish the score showing after three seconds
+        perform(#selector(finish), with: nil, afterDelay: 3)
+    }
+    
+    @objc func finish() {
+        dismiss(animated: true) {
+            self.navigationController?.popToRootViewController(animated: true)
+        }
     }
     
 }

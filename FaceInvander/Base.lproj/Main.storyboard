@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vWm-AO-YqC">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="FaceInvander" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BV1-FR-VrT" customClass="ViewController" customModule="FaceInvander" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -43,8 +43,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Title View Controller-->
+        <scene sceneID="FS7-ec-LJq">
+            <objects>
+                <viewController id="NRG-Sa-B8h" customClass="TitleViewController" customModule="FaceInvander" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bKp-xJ-Oe4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Kvv-jm-LAi">
+                                <rect key="frame" x="27" y="244" width="321" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="yjp-mh-iWm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-k3-jwJ">
+                                <rect key="frame" x="97.666666666666686" y="490" width="180" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GNa-k3-jwJ" firstAttribute="top" secondItem="Kvv-jm-LAi" secondAttribute="bottom" constant="133" id="3uz-o7-O6Z"/>
+                            <constraint firstItem="Kvv-jm-LAi" firstAttribute="top" secondItem="KGx-hy-1MB" secondAttribute="top" constant="200" id="4Ov-VB-M2B"/>
+                            <constraint firstItem="GNa-k3-jwJ" firstAttribute="centerX" secondItem="bKp-xJ-Oe4" secondAttribute="centerX" id="BO0-AE-6sz"/>
+                            <constraint firstItem="Kvv-jm-LAi" firstAttribute="centerX" secondItem="KGx-hy-1MB" secondAttribute="centerX" id="XT8-03-I9g"/>
+                            <constraint firstItem="Kvv-jm-LAi" firstAttribute="leading" secondItem="KGx-hy-1MB" secondAttribute="leading" constant="27" id="aUR-Ud-I7r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KGx-hy-1MB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gf1-vK-ZMA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3J-Lu-obq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="134.48275862068965"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2V0-MI-hef">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="vWm-AO-YqC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gwE-to-0iF">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NRG-Sa-B8h" kind="relationship" relationship="rootViewController" id="hyR-pX-1tA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Bt-AR-6ds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853.60000000000002" y="134.48275862068965"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="logo" width="320" height="113"/>
         <image name="reticule" width="42" height="42"/>
     </resources>
 </document>
